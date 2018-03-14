@@ -1,3 +1,8 @@
+helloworld_pb2_grpc.py
+helloworld_pb2.py
+.DS_Store
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -2,8 +2,8 @@ from __future__ import print_function
 
 import grpc
 
-import helloworld_pb2
-import helloworld_pb2_grpc
+import app.helloworld_pb2 as helloworld_pb2
+import app.helloworld_pb2_grpc as helloworld_pb2_grpc
 
 
 def run():

@@ -3,8 +3,8 @@ import time
 
 import grpc
 
-import helloworld_pb2
-import helloworld_pb2_grpc
+import app.helloworld_pb2 as helloworld_pb2
+import app.helloworld_pb2_grpc as helloworld_pb2_grpc
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 
@@ -13,7 +13,8 @@ class Greeter(helloworld_pb2_grpc.GreeterServicer):
 
     def Greet(self, request, context):
         print('Saying `hello` to %s' % request.name)
-        return helloworld_pb2.GreetResponse(message='Hello, %s!' % request.name)
+        return helloworld_pb2.GreetResponse(message='Hello, {}!'.format(request.name))
+
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))

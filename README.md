@@ -9,8 +9,8 @@ Python client-server demo using [gRPC](https://grpc.io/) and
 
 ## Install dependencies
 ```
-virtualenv env
-source env/bin/activate
+python3 -m venv env
+. env/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -31,4 +31,10 @@ python server.py
 ## Run the client
 ```
 python client.py
+```
+
+## Run tests
+```
+pip install -r requirements_text.txt
+py.test tests/
 ```

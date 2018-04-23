@@ -25,12 +25,12 @@ python -m grpc_tools.protoc \
 
 ## Start the server
 ```
-python server.py
+python3 app/server.py
 ```
 
 ## Run the client
 ```
-python client.py
+python3 app/client.py
 ```
 
 ## Run tests
